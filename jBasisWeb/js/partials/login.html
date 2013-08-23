@@ -1,0 +1,31 @@
+<div class="" id="divFormContainer">
+    <form name="login" class="frm_login clearBordo">
+        <div style="text-align: center; width: 100%; padding-top: 20px; padding-bottom: 20px;">
+            <label style="font-size: 24px; color: #049CF4; font-family:Lucida Console;" data-ng-bind="title"/>
+        </div>
+
+        <table style="padding-top: 20px; padding-bottom: 20px;">
+            <tbody>
+            <tr>
+                <td nowrap="" data-ng-bind="usernameLbl" id="username" width="40%" style="text-align: right;"/>
+                <td nowrap="">
+                    <input type="text" data-ng-model="username" maxlength="32" ndec="" id="RGI_username" name="RGI_username"
+                           class="classeCampiObbligatori">
+                </td>
+            </tr>
+            <tr>
+                <td nowrap="" data-ng-bind="passwordLbl" id="password" width="40%" style="text-align: right;"/>
+                <td nowrap="">
+                    <input type="password" data-ng-model="password" maxlength="32" ndec="" id="RGI_password" name="RGI_password"
+                           class="classeCampiObbligatori">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div style="text-align: right; width: 100%; padding-top: 20px;">
+            <input id="BTNOk" data-ng-show="username.length > 0 && password.length > 0" data-ng-click="tryToLogin()" type="button" class="bottone bottoneNavigazione show-tooltip" name="{{okBtn.name}}" value="{{okBtn.value}}" title="{{okBtn.title}}">
+            <input id="BTNClear" data-ng-click="clearFields()" type="button" class="bottone bottoneDettaglio show-tooltip" name="{{clearBtn.name}}" value="{{clearBtn.value}}" title="{{clearBtn.title}}">
+        </div>
+    </form>
+</div>

@@ -1,0 +1,12 @@
+<ul class="menu" data-ng-repeat="menuItem in menuItems">
+    <li class="parent">
+        <a href="menuItem.route">
+            <div class="vocemenu" data-ng-bind="menuItem.name"></div>
+        </a>
+    </li>
+    <li class="children" data-ng-repeat="child in menuItem.children">
+        <a href="menuItem.route">
+            <div class="vocemenu" data-ng-bind="child.name"></div>
+        </a>
+    </li>
+</ul>
